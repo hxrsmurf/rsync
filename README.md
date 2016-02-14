@@ -1,5 +1,4 @@
-Rsync script to backup my seafile-data to another server. Will be moving this to Nearline or S3/Glacier shortly with duplicity encryption. But don't really have the upload speed at home for that. 
+Dumps default SeaFile databases from mysql w/ username root and password [redacted] to the seafile-data/databases folder. 
 
-This simply logs everything with the date, and goes on its merry way. I did a check for the NFS mount I have, because one time the NFS wasn't mounted and I accidentally sync'd to the local disk drive not the remote. Whoops! That ain't happening again.
-
+Uses Duplicity w/ keypair [redacted] to sync to Google Nearline (cheapest method as of 13Feb2016.
 
